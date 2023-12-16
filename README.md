@@ -4,13 +4,12 @@ proyecto realizado en el primer año de la preparatoria
 
 ## Que construi?
 
-en este proyecto tuve como proposito construir la clonacion de la interfaz del navegador de Google
-contiene los siguientes elementos :
-
-
-* Header
-* Main
-* Footer
+en este proyecto tuve como proposito construir un codigo que pudiera realizar las operaciones basicas de una calculadora
+*Suma
+*Resta
+*Multiplicacion
+*Divion
+*Potencia
 
 ## ¿Que tecnologias utilice?
 
