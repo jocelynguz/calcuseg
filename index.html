@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SUMA DE DOS NUMEROS</title>
+    </head>
+    <body>
+        <form id="calc" name="calc">
+            <label for="">Numero 1</label>
+            <input type="number" id="txtnumero1" name="txtnumero1" value=""><br>
+                <label for="">Numero 2</label>
+                <input type="number" id="txtnumero2" name="txtnumero2" value=""><br>
+                <input type="button" id="btn-enviar" name="btn-enviar" value="sumar" onclick="sumar()"> Suma <br>
+                <input type="button" id="btn-enviar" name="btn-enviar" value="restar" onclick="restar()"> Resta <br>
+                <input type="button" id="btn-enviar" name="btn-enviar" value="multiplicacion" onclick="multiplicacion()"> Multiplicacion <br>
+                <input type="button" id="btn-enviar" name="btn-enviar" value="divicion" onclick="divicion()"> Divicion <br>
+                <input type="button" id="btn-enviar" name="btn-enviar" value="potencia" onclick="potencia()"> POTENCIA <br> 
+                <input type="text" id="resultado" name="" value="">Resultado suma<br>
+                <input type="text" id="resultado1" name="" value="">Resultado de la resta<br> 
+                <input type="text" id="resultado2" name="" value="">Resultado de la multiplicacion<br> 
+                <input type="text" id="resultado3" name="" value="">Resultado de la divicion<br>
+                <input type="text" id="resultado4" name="" value="">Resultado de la potencia<br> 
+        </form>
+        <script>
+            function sumar(){
+                var num1;
+                var num2;
+                var opc;
+                num1=document.calc.txtnumero1.value;
+                num2=document.calc.txtnumero2.value;
+                opc=eval(num1) + eval(num2);
+                document.calc.resultado.value=opc;
+            }
+            function restar(){
+                var num1;
+                var num2;
+                var opc;
+                num1=document.calc.txtnumero1.value;
+                num2=document.calc.txtnumero2.value;
+                opc=eval(num1) - eval(num2);
+                document.calc.resultado1.value=opc;
+            }
+            function multiplicacion(){
+                var num1;
+                var num2;
+                var opc;
+                num1=document.calc.txtnumero1.value;
+                num2=document.calc.txtnumero2.value;
+                opc=eval(num1) * eval(num2);
+                document.calc.resultado2.value=opc;
+            }
+            function divicion(){
+                var num1;
+                var num2;
+                var opc;
+                num1=document.calc.txtnumero1.value;
+                num2=document.calc.txtnumero2.value;
+                opc=eval(num1) / eval(num2);
+                document.calc.resultado3.value=opc;
+            }
+            function potencia(){
+                var num1;
+                var num2;
+                var opc;
+                num1=document.calc.txtnumero1.value;
+                num2=document.calc.txtnumero2.value;
+                opc=eval(num1) ** eval(num2);
+                document.calc.resultado4.value=opc;
+            }
+        </script>
+    </body>
+</html>
